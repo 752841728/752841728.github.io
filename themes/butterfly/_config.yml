@@ -230,8 +230,8 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/752841728
+      text: 本站源码
+      link: https://github.com/752841728/752841728.github.io
   card_announcement:
     enable: true
     content: This is my Blog
