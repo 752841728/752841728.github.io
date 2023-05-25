@@ -159,7 +159,7 @@ post_copyright:
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license_url: https://752841728.github.io/
 
 # Sponsor/reward
 reward:
@@ -206,10 +206,10 @@ noticeOutdate:
 # --------------------------------------
 footer:
   owner:
-    enable: true
-    since: 2020
+    enable: false
+    since: 2023
   custom_text:
-  copyright: true # Copyright of theme and framework
+  copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
 # --------------------------------------

@@ -43,7 +43,7 @@ git push origin dev
 git branch --set-upstream-to=origin/dev dev
 ```
 ```powershell
-git push -u origin dev	// 通过提交本地dev关联远程dev
+git push -u origin dev // 通过提交本地dev关联远程dev
 ```
 
 关联分支后的命令可以简写：
@@ -64,7 +64,7 @@ git branch
 git branch master
 ```
 ```powershell
-git checkout -b master	// 创建新分支并切换到新分支
+git checkout -b master // 创建新分支并切换到新分支
 ```
 删除本地master分支：
 
@@ -74,7 +74,7 @@ git branch -D master
 本地dev合并本地master：
 
 ```powershell
-git checkout master	// 切换到本地master分支
+git checkout master // 切换到本地master分支
 git merge dev // 将本地dev分支合并到本地master分支
 git cherry-pick commit1ID commit2ID // 只合并本地dev分支commit1和commit2的提交到本地master分支
 ```
@@ -83,7 +83,7 @@ git cherry-pick commit1ID commit2ID // 只合并本地dev分支commit1和commit2
 ## 1.撤销某个提交并生成新的提交
 
 ```powershell
-git revert -n commitID	// commit的提交后面的提交记录会保留
+git revert -n commitID // commit的提交后面的提交记录会保留
 git commit -m "feat: 撤销commitID的提交"
 git pull
 git push
@@ -91,10 +91,10 @@ git push
 ## 2.回滚到某个提交
 
 ```powershell
-git reset --hard commitID	// commit的提交后面的提交记录不会保留
+git reset --hard commitID // commit的提交后面的提交记录不会保留
 git commit -m "feat: 回滚到commitID的提交"
 git pull
-git push -f	// 本地仓库与远程仓库不一致，需要强制提交
+git push -f // 本地仓库与远程仓库不一致，需要强制提交
 ```
 ## 3.撤回本地commit
 
