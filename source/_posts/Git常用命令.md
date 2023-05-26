@@ -1,7 +1,8 @@
 title: Git常用命令
 author: Funny Boy
 date: 2023-05-25 11:11:14
-tags:
+tags: ["Git"]
+categories: ["前端"]
 ---
 # 前言
 假设：
