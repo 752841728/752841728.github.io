@@ -1,8 +1,16 @@
 {% flink %}
 - class_name: 网站
-  class_desc: 值得推荐的网站
+  class_desc: 经常使用的网站
   link_list:
-    - name: geojson.io
+    - name: Poe
+      link: https://poe.com/ChatGPT
+      avatar: https://jerryc.me/img/avatar.png
+      descr: ""
+    - name: 菜鸟工具
+      link: https://c.runoob.com/
+      avatar: https://jerryc.me/img/avatar.png
+      descr: ""
+    - name: Geojson.io
       link: https://geojson.io/
       avatar: https://jerryc.me/img/avatar.png
       descr: ""
@@ -10,13 +18,9 @@
       link: http://datav.aliyun.com/portal/school/atlas/area_selector
       avatar: https://jerryc.me/img/avatar.png
       descr: ""
-    - name: 菜鸟工具
-      link: https://c.runoob.com/
-      avatar: https://jerryc.me/img/avatar.png
-      descr: ""
 
 - class_name: 框架
-  class_desc: 经常使用的框架
+  class_desc: 值得推荐的框架
   link_list:
     - name: Vue.js
       link: https://cn.vuejs.org/
