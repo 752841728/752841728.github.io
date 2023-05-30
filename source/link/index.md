@@ -6,6 +6,18 @@
       link: https://poe.com/ChatGPT
       avatar: https://jerryc.me/img/avatar.png
       descr: ""
+    - name: Github
+      link: https://github.com/
+      avatar: https://jerryc.me/img/avatar.png
+      descr: ""
+    - name: Gitee
+      link: https://gitee.com/
+      avatar: https://jerryc.me/img/avatar.png
+      descr: ""
+    - name: Iconfont
+      link: https://www.iconfont.cn/
+      avatar: https://jerryc.me/img/avatar.png
+      descr: ""
     - name: 菜鸟工具
       link: https://c.runoob.com/
       avatar: https://jerryc.me/img/avatar.png
