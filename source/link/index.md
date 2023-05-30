@@ -36,7 +36,7 @@
   link_list:
     - name: Vue.js
       link: https://cn.vuejs.org/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/Vue.png
       descr: 易学易用，性能出色，适用场景丰富的 Web 前端框架
     - name: Element
       link: https://element.eleme.cn/#/zh-CN
