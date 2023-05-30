@@ -76,7 +76,7 @@ git branch -D master
 
 ```powershell
 git checkout master // 切换到本地master分支
-git merge dev // 将本地dev分支合并到本地master分支
+git merge --no-ff dev // 将本地dev分支合并到本地master分支
 git cherry-pick commit1ID commit2ID // 只合并本地dev分支commit1和commit2的提交到本地master分支
 ```
 # 三、回滚
