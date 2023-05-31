@@ -4,31 +4,31 @@
   link_list:
     - name: Poe
       link: https://poe.com/ChatGPT
-      avatar: https://jerryc.me/img/avatar.png
-      descr: ""
-    - name: Github
+      avatar: /img/link/Poe.svg
+      descr: "ChatGPT"
+    - name: GitHub
       link: https://github.com/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/GitHub.svg
       descr: ""
     - name: Gitee
       link: https://gitee.com/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/Gitee.ico
       descr: ""
     - name: Iconfont
       link: https://www.iconfont.cn/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/Iconfont.png
       descr: ""
     - name: 菜鸟工具
       link: https://c.runoob.com/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/菜鸟工具.ico
       descr: ""
     - name: Geojson.io
       link: https://geojson.io/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/Geojson.png
       descr: ""
     - name: DataV.GeoAtlas
       link: http://datav.aliyun.com/portal/school/atlas/area_selector
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/GeoAtlas.ico
       descr: ""
 
 - class_name: 框架
@@ -36,26 +36,26 @@
   link_list:
     - name: Vue.js
       link: https://cn.vuejs.org/
-      avatar: /img/link/Vue.png
+      avatar: /img/link/Vue.svg
       descr: 易学易用，性能出色，适用场景丰富的 Web 前端框架
     - name: Element
       link: https://element.eleme.cn/#/zh-CN
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/Element.ico
       descr: Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
     - name: Element Plus
       link: https://element-plus.gitee.io/zh-CN/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/ElementPlus.svg
       descr: 基于 Vue 3，面向设计师和开发者的组件库
     - name: Apache ECharts
       link: https://echarts.apache.org/zh/index.html
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/ApacheECharts.png
       descr: 一个基于 JavaScript 的开源可视化图表库
     - name: Leaflet
       link: https://leafletjs.com/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/Leaflet.ico
       descr: an open-source JavaScript library for mobile-friendly interactive maps
     - name: Cesium中文网
       link: http://cesium.xin/
-      avatar: https://jerryc.me/img/avatar.png
+      avatar: /img/link/Cesium中文网.ico
       descr: ""
 {% endflink %}
