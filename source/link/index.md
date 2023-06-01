@@ -5,31 +5,31 @@
     - name: Poe
       link: https://poe.com/ChatGPT
       avatar: /img/link/Poe.svg
-      descr: "ChatGPT"
+      descr: ChatGPT
     - name: GitHub
       link: https://github.com/
       avatar: /img/link/GitHub.svg
-      descr: ""
+      descr: Let’s build from here
     - name: Gitee
       link: https://gitee.com/
       avatar: /img/link/Gitee.ico
-      descr: ""
+      descr: DevOps 一站式研发效能平台
     - name: Iconfont
       link: https://www.iconfont.cn/
       avatar: /img/link/Iconfont.png
-      descr: ""
+      descr: 图标库
     - name: 菜鸟工具
       link: https://c.runoob.com/
       avatar: /img/link/菜鸟工具.ico
-      descr: ""
+      descr: 正则表达式验证
     - name: Geojson.io
       link: https://geojson.io/
       avatar: /img/link/Geojson.png
-      descr: ""
+      descr: 加载Geojson数据
     - name: DataV.GeoAtlas
       link: http://datav.aliyun.com/portal/school/atlas/area_selector
       avatar: /img/link/GeoAtlas.ico
-      descr: ""
+      descr: 获取Geojson数据
 
 - class_name: 框架
   class_desc: 值得推荐的框架
@@ -57,5 +57,5 @@
     - name: Cesium中文网
       link: http://cesium.xin/
       avatar: /img/link/Cesium中文网.ico
-      descr: ""
+      descr: 3D geospatial visualization for the web
 {% endflink %}
