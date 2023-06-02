@@ -56,6 +56,6 @@
       descr: an open-source JavaScript library for mobile-friendly interactive maps
     - name: Cesium中文网
       link: http://cesium.xin/
-      avatar: /img/link/Cesium中文网.ico
+      avatar: /img/link/Cesium.svg
       descr: 3D geospatial visualization for the web
 {% endflink %}
