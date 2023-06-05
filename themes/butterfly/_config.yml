@@ -228,9 +228,9 @@ aside:
     enable: true
     description:
     button:
-      enable: false
+      enable: true
       icon: fab fa-github
-      text: 本站源码
+      text: GitHub
       link: https://github.com/752841728/752841728.github.io
   card_announcement:
     enable: false
