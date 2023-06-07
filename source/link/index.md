@@ -30,6 +30,10 @@
       link: http://datav.aliyun.com/portal/school/atlas/area_selector
       avatar: /img/link/GeoAtlas.ico
       descr: 获取Geojson数据
+    - name: POI数据
+      link: https://www.poi86.com/
+      avatar: /img/link/POI数据.ico
+      descr: 获取Geojson数据
 
 - class_name: 框架
   class_desc: 值得推荐的框架
