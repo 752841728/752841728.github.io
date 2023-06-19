@@ -1524,6 +1524,9 @@ blockquote footer cite:before {
 blockquote > :last-child {
   margin-bottom: 0 !important;
 }
+.aplayer-lrc {
+  display: none !important;
+}
 :root {
   --hl-color: #90a4ae;
   --hl-bg: #f6f8fa;
