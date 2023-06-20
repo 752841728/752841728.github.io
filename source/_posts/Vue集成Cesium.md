@@ -58,6 +58,10 @@ npm install cesium --save-dev
 npm install @open-wc/webpack-import-meta-loader -D
 npm install @babel/core @babel/preset-env babel-loader --save-dev
 ```
+如果遇到babel-loader因为版本问题无法安装的话，可以尝试加上--legacy-peer-deps命令
+```powershell
+npm install @babel/core @babel/preset-env babel-loader --save-dev --legacy-peer-deps
+```
 ## 3.配置vue.config.js
 
 ```javascript
