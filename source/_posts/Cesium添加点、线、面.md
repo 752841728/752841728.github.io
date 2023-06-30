@@ -1,14 +1,18 @@
-title: Cesium添加点、线、面
+title: Cesium 添加点、线、面
 author: Funny Boy
 date: 2023-06-30 12:08:17
 tags: ["Vue","Cesium"]
 categories: ["GIS"]
+
 ---
+
 # 前言
-使用entity和primitive两种方式添加点、线、面，并通过点击事件修改颜色
+
+使用 entity 和 primitive 两种方式添加点、线、面，并通过点击事件修改颜色
 示例使用的数据：[map.js](https://gitee.com/funny_boy/vue-cesium/blob/master/vue-cli-5-cesium/src/assets/data/map.js)
 
 ---
+
 # 一、配置
 
 ```javascript
@@ -90,6 +94,7 @@ export default {
 ```
 
 # 二、entity
+
 ## 1.点
 
 ```javascript
@@ -211,6 +216,7 @@ addHandler() {
 ```
 
 # 三、primitive
+
 ## 1.点
 
 ```javascript
@@ -294,6 +300,7 @@ add_primitive_line() {
   }
 },
 ```
+
 ## 3.面
 
 ```javascript
@@ -359,6 +366,7 @@ add_primitive_polygon(
   }
 },
 ```
+
 ## 4.点击变色
 
 ```javascript
@@ -404,11 +412,13 @@ addHandler() {
 # 四、完整代码
 
 [add_point_line_polygon.vue](https://gitee.com/funny_boy/vue-cesium/blob/master/vue-cli-5-cesium/src/components/add_point_line_polygon.vue)
+
 # 五、效果图
 
-![add_point_line_polygon.png](https://img-blog.csdnimg.cn/712c904663c44d7f808dd9b7eea6b017.png#pic_center)
+![add_point_line_polygon.png](http://rx1tfk0h0.hn-bkt.clouddn.com/images/add_point_line_polygon.png)
 
 ---
 
 # 总结
-因为entity是基于primitive封装的，所以primitive性能比entity好太多了，但是对于cesium和webgl的熟练度较高。数据量小的话，使用entity可以快速上手。数据量大的话，推荐使用primitive提高性能。
+
+因为 entity 是基于 primitive 封装的，所以 primitive 性能比 entity 好太多了，但是对于 cesium 和 webgl 的熟练度较高。数据量小的话，使用 entity 可以快速上手。数据量大的话，推荐使用 primitive 提高性能。
