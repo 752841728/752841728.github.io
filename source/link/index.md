@@ -18,6 +18,10 @@
       link: https://www.iconfont.cn/
       avatar: /img/link/Iconfont.png
       descr: 图标库
+    - name: Greasy Fork
+      link: https://greasyfork.org/zh-CN
+      avatar: /img/link/greasyfork.png
+      descr: 浏览器扩展程序油猴的脚本大全
     - name: 菜鸟工具
       link: https://c.runoob.com/
       avatar: /img/link/菜鸟工具.ico
@@ -58,8 +62,12 @@
       link: https://leafletjs.com/
       avatar: /img/link/Leaflet.ico
       descr: an open-source JavaScript library for mobile-friendly interactive maps
-    - name: Cesium中文网
-      link: http://cesium.xin/
+    - name: Cesium Demo
+      link: https://sandcastle.cesium.com/index.html?src=3D%20Models.html&label=All
+      avatar: /img/link/Cesium.svg
+      descr: 3D geospatial visualization for the web
+    - name: Cesium文档
+      link: http://cesium.xin/cesium/en/Documentation1.95/index.html
       avatar: /img/link/Cesium.svg
       descr: 3D geospatial visualization for the web
 {% endflink %}
