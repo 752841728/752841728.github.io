@@ -93,8 +93,6 @@ git push
 
 ```powershell
 git reset --hard commitID // commit的提交后面的提交记录不会保留
-git commit -m "feat: 回滚到commitID的提交"
-git pull
 git push -f // 本地仓库与远程仓库不一致，需要强制提交
 ```
 ## 3.撤回本地commit
