@@ -1,4 +1,4 @@
-title: Nginx 使用流程
+title: Nginx使用流程
 author: Funny Boy
 date: 2023-07-14 14:06:26
 tags: ["Nginx"]

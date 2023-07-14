@@ -9,7 +9,7 @@ categories: ["GIS"]
 # 前言
 
 使用 entity 和 primitive 两种方式添加点、线、面，并通过点击事件修改颜色
-示例使用的数据：[map.js](https://gitee.com/funny_boy/vue-cesium/blob/master/vue-cli-5-cesium/src/assets/data/map.js)
+示例使用的数据：[map.js](https://github.com/752841728/hexo-picture/blob/main/map/map.js)
 
 ---
 
