@@ -415,7 +415,7 @@ addHandler() {
 
 # 五、效果图
 
-![add_point_line_polygon.png](https://github.com/752841728/hexo-picture/blob/main/20230714/1.png)
+![add_point_line_polygon.png](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/1.png)
 
 ---
 
