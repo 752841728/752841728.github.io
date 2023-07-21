@@ -70,4 +70,8 @@
       link: http://cesium.xin/cesium/en/Documentation1.95/index.html
       avatar: /img/link/Cesium.svg
       descr: 3D geospatial visualization for the web
+    - name: Cesium中文网
+      link: http://cesium.xin/
+      avatar: /img/link/Cesium.svg
+      descr: 3D geospatial visualization for the web
 {% endflink %}
