@@ -74,4 +74,16 @@
       link: http://cesium.xin/
       avatar: /img/link/Cesium.svg
       descr: 3D geospatial visualization for the web
+    - name: SuperMap Demo
+      link: http://support.supermap.com.cn/DataWarehouse/WebDocHelp/iServer/webgl/examples/webgl/examples.html#layer
+      avatar: /img/link/SuperMap.svg
+      descr: 三维“零客户端”开发平台
+    - name: SuperMap文档
+      link: http://support.supermap.com.cn/DataWarehouse/WebDocHelp/iServer/webgl/web/apis/3dwebgl.html
+      avatar: /img/link/SuperMap.svg
+      descr: 三维“零客户端”开发平台
+    - name: SuperMap技术问答社区
+      link: http://qa.supermap.com/
+      avatar: /img/link/SuperMap.svg
+      descr: 三维“零客户端”开发平台
 {% endflink %}
