@@ -409,11 +409,7 @@ addHandler() {
 },
 ```
 
-# 四、完整代码
-
-[add_point_line_polygon.vue](https://gitee.com/funny_boy/vue-cesium/blob/master/vue-cli-5-cesium/src/components/add_point_line_polygon.vue)
-
-# 五、效果图
+# 四、效果图
 
 ![add_point_line_polygon.png](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/1.png)
 
