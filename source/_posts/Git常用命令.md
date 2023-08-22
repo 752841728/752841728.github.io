@@ -67,6 +67,11 @@ git branch master
 ```powershell
 git checkout -b master // 创建新分支并切换到新分支
 ```
+修改本地当前分支名称：
+
+```powershell
+git branch -M main
+```
 删除本地master分支：
 
 ```powershell
