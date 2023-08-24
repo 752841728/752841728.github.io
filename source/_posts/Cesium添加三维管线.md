@@ -9,7 +9,7 @@ categories: ["GIS"]
 # 前言
 
 使用primitive添加三维管线，并自定义材质和颜色
-示例中使用的数据：[surface.jpg](https://github.com/752841728/hexo-picture/blob/main/map/surface.jpg)
+示例中使用的数据：[map-3d.json](https://github.com/752841728/hexo-picture/blob/main/map/map-3d.json)、[surface.jpg](https://github.com/752841728/hexo-picture/blob/main/map/surface.jpg)
 
 ---
 # 一、配置
