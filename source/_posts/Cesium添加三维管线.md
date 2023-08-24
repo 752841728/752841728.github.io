@@ -42,10 +42,10 @@ export default {
       this.viewer = new Cesium.Viewer("map", {
         // 配置项
         terrainProvider: Cesium.createWorldTerrain(), // 生成地形
-        requestRenderMode: true,	// 优化性能
-   		maximumRenderTimeChange: Infinity,	// 优化性能
+        requestRenderMode: true,  // 优化性能
+        maximumRenderTimeChange: Infinity,  // 优化性能
       });
-	  viewer.scene.globe.depthTestAgainstTerrain = true;	// 开启深度检测
+      viewer.scene.globe.depthTestAgainstTerrain = true;  // 开启深度检测
     },
   },
   mounted() {
