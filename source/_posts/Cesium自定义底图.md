@@ -175,6 +175,6 @@ imageryLayers.addImageryProvider(
 天地图改不出理想的效果，智图不清楚是否可以商用，最后选择了Mapbox
 [Mapbox注册教程](https://baijiahao.baidu.com/s?id=1769460780111679075&wfr=spider&for=pc)
 [Mapbox官方样式](https://www.mapbox.com/gallery/)
-还有一些尝试失败的文章
+还有一些尝试失败的方案
 [Cesium 高性能扩展之自定义地图主题](https://zhuanlan.zhihu.com/p/480835644)
 [天地图修改主题颜色修改背景色](https://segmentfault.com/a/1190000041703873)
