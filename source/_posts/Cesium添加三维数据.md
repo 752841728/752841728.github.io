@@ -59,7 +59,7 @@ let model = viewer.scene.primitives.add(
 
 viewer.camera.setView({
     destination: position,
-   	duration: 0,
+    duration: 0,
     complete: () => {},
 });
 ```
@@ -168,7 +168,9 @@ var viewer = new Cesium.Viewer("cesiumcontainer", {
     })
 })
 viewer.camera.setView({
-    destination: Cesium.Cartesian3.fromDegrees(113.824174404144, 22.1379446983337, 1000)
+    destination: Cesium.Cartesian3.fromDegrees(113.824174404144, 22.1379446983337, 1000),
+    duration: 0,
+    complete: () => {},
 });
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/4eb7ef5db7694b6bbb3e64b8438f7b63.png#pic_center)
