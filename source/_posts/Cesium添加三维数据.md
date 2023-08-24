@@ -1,5 +1,5 @@
 # 前言
-Cesium添加gltf、3dtiles、digital terrain model、超图等三维数据
+Cesium添加gltf、3dtiles、geotiff、超图等三维数据
 
 ---
 # 一、gltf
@@ -63,7 +63,7 @@ viewer.camera.setView({
     complete: () => {},
 });
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/72c73c0a49c54bba93ce4acd8d2d86c2.png#pic_center)
+![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/3-1.png)
 
 # 二、3dtiles
 
@@ -157,7 +157,7 @@ function update3dtilesMaxtrix(tileset, position_params) {
 }
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9b036b6490bd4a7da6ae0c23c7b846b9.png#pic_center)
+![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/3-2.png)
 
 # 三、geotiff
 
@@ -173,7 +173,7 @@ viewer.camera.setView({
     complete: () => {},
 });
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4eb7ef5db7694b6bbb3e64b8438f7b63.png#pic_center)
+![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/3-3.png)
 
 # 四、SuperMap
 
