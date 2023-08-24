@@ -1,3 +1,11 @@
+title: Cesium添加三维数据
+author: Funny Boy
+date: 2023-06-30 12:08:17
+tags: ["Vue","Cesium"]
+categories: ["GIS"]
+
+---
+
 # 前言
 Cesium添加gltf、3dtiles、geotiff、超图等三维数据
 
