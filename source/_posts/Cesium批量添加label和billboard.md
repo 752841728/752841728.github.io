@@ -99,3 +99,7 @@ const add_primitive_icon = (data, image, withLabel) => {
 
 # 三、效果图
 ![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/8-1.png)
+
+---
+# 总结
+转换坐标系的tranformCoordinate方法，参考右文：[不同坐标系的经纬度转换](https://752841728.github.io/2023/08/24/%E4%B8%8D%E5%90%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%BB%8F%E7%BA%AC%E5%BA%A6%E8%BD%AC%E6%8D%A2/)
