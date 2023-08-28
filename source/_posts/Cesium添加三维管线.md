@@ -1,7 +1,7 @@
 title: Cesium添加三维管线
 author: Funny Boy
 date: 2023-08-24 14:58:17
-tags: ["Vue","Cesium"]
+tags: ["Cesium"]
 categories: ["GIS"]
 
 ---

@@ -1,7 +1,7 @@
 title: Cesium自定义底图
 author: Funny Boy
 date: 2023-08-24 16:43:02
-tags: ["Vue","Cesium"]
+tags: ["Cesium"]
 categories: ["GIS"]
 ---
 

@@ -1,7 +1,7 @@
 title: Cesium添加点、线、面
 author: Funny Boy
 date: 2023-06-30 12:08:17
-tags: ["Vue","Cesium"]
+tags: ["Cesium"]
 categories: ["GIS"]
 
 ---

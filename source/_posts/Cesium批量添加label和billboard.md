@@ -2,7 +2,7 @@
 title: Cesium批量添加label和billboard
 author: Funny Boy
 date: 2023-08-28 11:06:02
-tags: ["Vue","Cesium"]
+tags: ["Cesium"]
 categories: ["GIS"]
 ---
 

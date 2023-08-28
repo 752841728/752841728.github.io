@@ -1,7 +1,7 @@
 title: Cesium实现渐变色多边形
 author: Funny Boy
 date: 2023-07-14 17:21:02
-tags: ["Vue","Cesium"]
+tags: ["Cesium"]
 categories: ["GIS"]
 
 ---
