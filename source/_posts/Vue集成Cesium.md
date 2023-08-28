@@ -228,6 +228,9 @@ export default defineConfig({
 });
 ```
 
+---
+
+
 # 总结
 [源码参考](https://gitee.com/funny_boy/vue-cesium)
 因为vite使用了vite-plugin-cesium插件，所以vite集成cesium变得非常简单。其实vue-cli也有vue-cli-plugin-cesium插件，可惜已经很久没有维护，高版本的vue-cli已经无法使用。

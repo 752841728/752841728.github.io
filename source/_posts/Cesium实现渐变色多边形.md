@@ -141,5 +141,8 @@ add_primitive_polygon(
 # 四、效果图
 ![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/4-1.png)
 
+---
+
+
 # 总结
 [Cesium添加点、线、面](https://752841728.github.io/2023/06/30/Cesium%E6%B7%BB%E5%8A%A0%E7%82%B9%E3%80%81%E7%BA%BF%E3%80%81%E9%9D%A2/)中添加多边形的方法和本文中添加渐变色的方法，区别是将material改为this.gradientColor即可

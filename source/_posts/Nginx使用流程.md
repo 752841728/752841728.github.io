@@ -122,6 +122,9 @@ Tomcat 服务的默认端口号是 8080，conf 文件夹下的 server.xml 文件
 
 ![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/2-17.png)
 
+---
+
+
 # 总结
 
 本文使用的是 Tomcat 8 和 Java 8，不同的版本的 Tomcat 和 Java 会有兼容性问题

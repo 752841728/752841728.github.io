@@ -161,6 +161,9 @@ const startFly = (path) => {
 };
 ```
 
+---
+
+
 # 总结
 飞行过程中调整视角
 [Cesium飞行漫游，动态调整视角](https://blog.csdn.net/dahongdahong/article/details/108647230)
