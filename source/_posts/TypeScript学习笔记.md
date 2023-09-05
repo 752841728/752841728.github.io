@@ -80,8 +80,7 @@ function controlFlowAnalysisWithNever(foo: Foo) {
     const check: never = foo;
   }
 }
-```
-```javascript
+
 // 新增了Foo的类型，但没有对应的实现
 type Foo = string | number | boolean;
 
