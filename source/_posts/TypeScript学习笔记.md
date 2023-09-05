@@ -15,13 +15,13 @@ categories: ["前端"]
 boolean、number、string、null、undefined比较简单，不再阐述
 
 array
-```javascript
+```typescript
 let arr: number[] = [1, 2, 3];
 let arr: Array<number> = [1, 2, 3];
 let arr: [number, string] = [1, '2']	// 元组tuple
 ```
 enum
-```javascript
+```typescript
 // 异构枚举，既包含数字又包含字符串
 enum Direction {
   NORTH = 0,
@@ -47,7 +47,7 @@ console.log(Direction[0]); // NORTH
 ```
 any、unknown
 
-```javascript
+```typescript
 // 所有类型可以赋值给any，any可以赋值给所有类型
 // 所有类型可以赋值给unknown，unknown不可以赋值给任何类型
 let test: number = 123;
@@ -62,14 +62,14 @@ console.log(test1[0])
 console.log(test3[0])   // error
 ```
 void
-```javascript
+```typescript
 // 函数没有返回值时使用
 function warnUser(): void {
   console.log("This is my warning message");
 }
 ```
 never
-```javascript
+```typescript
 // 确保类型绝对安全的代码，避免新增了联合类型，但没有对应的实现
 type Foo = string | number;
 
@@ -91,4 +91,13 @@ function controlFlowAnalysisWithNever(foo: Foo) {
     const check: never = foo;	// error
   }
 }
+```
+
+# 二、类型断言
+
+```typescript
+// 两种写法
+let someValue: any = "this is a string";
+let strLength: number = (<string>someValue).length;
+let strLength: number = (someValue as string).length;
 ```
