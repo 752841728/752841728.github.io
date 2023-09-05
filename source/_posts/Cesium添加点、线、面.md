@@ -418,3 +418,4 @@ addHandler() {
 # 总结
 
 因为 entity 是基于 primitive 封装的，所以 primitive 性能比 entity 好太多了，但是对于 cesium 和 webgl 的熟练度较高。数据量小的话，使用 entity 可以快速上手。数据量大的话，推荐使用 primitive 提高性能。
+[Cesium（Geometry）：各种GeometryInstance的添加方法](https://blog.csdn.net/zy123698745/article/details/102813129?spm=1001.2014.3001.5506)
