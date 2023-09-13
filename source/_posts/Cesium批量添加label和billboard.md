@@ -46,7 +46,7 @@ export default {
         maximumRenderTimeChange: Infinity,  // 优化性能
       });
       viewer.scene.globe.depthTestAgainstTerrain = true;  // 开启深度检测
-      viewer.scene.postProcessStages.fxaa.enabled = false;  // 抗锯齿
+      viewer.scene.postProcessStages.fxaa.enabled = true;  // 抗锯齿
     },
   },
   mounted() {
