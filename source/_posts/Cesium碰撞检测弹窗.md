@@ -450,8 +450,3 @@ export default {
 </style>
 
 ```
-
----
-
-# 效果图
-![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/10-1.gif)

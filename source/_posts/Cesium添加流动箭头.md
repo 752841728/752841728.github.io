@@ -1,6 +1,6 @@
-title: Cesium添加三维管线
+title: Cesium添加流动箭头
 author: Funny Boy
-date: 2023-08-24 14:58:17
+date: 2023-12-12 12:19:17
 tags: ["Cesium"]
 categories: ["GIS"]
 
@@ -8,28 +8,16 @@ categories: ["GIS"]
 
 # 前言
 
-使用primitive添加三维管线，并自定义材质和颜色
-示例中使用的数据：[map-3d.json](https://github.com/752841728/hexo-picture/blob/main/map/map-3d.json)、[surface.jpg](https://github.com/752841728/hexo-picture/blob/main/map/surface.jpg)
+添加三维管线的方法和数据，参考右文：[Cesium添加三维管线](https://752841728.github.io/2023/08/24/Cesium%E6%B7%BB%E5%8A%A0%E4%B8%89%E7%BB%B4%E7%AE%A1%E7%BA%BF)
+本文是在add3DLine函数的基础上增加withAnimation传参实现添加流动箭头（使用WebGL1.0的语法）
 
 ---
-# 一、配置
+# 一、根据图片大小分配箭头数量
+参考资料：[cesium polyline 自定义材质图片运动线](https://blog.csdn.net/qq_34447899/article/details/123224443)
+缺陷：通过计算线的角度解决图片破碎问题，导致部分情况箭头方向相反
 
 ```javascript
-<template>
-  <div>
-    <div id="map" style="width: 100vw; height: 100vh"></div>
-  </div>
-</template>
-
-<script setup>
-import { onMounted } from "vue";
-import * as Cesium from "cesium";
-import "cesium/Build/Cesium/Widgets/widgets.css";
-import mapData from "@/assets/map-3d.json";
-import surface_img from "@/assets/surface.jpg";
-import { tranformCoordinate } from "@/utils/map.js"; // 转换坐标系的方法
-
-let viewer = null;
+import arrow_img from "@/assets/images/arrow.png";
 
 function initMap() {
   Cesium.Ion.defaultAccessToken =
@@ -37,61 +25,20 @@ function initMap() {
   viewer = new Cesium.Viewer("map", {
     // 配置项
     terrainProvider: Cesium.createWorldTerrain(), // 生成地形
-    requestRenderMode: true, // 优化性能
-    maximumRenderTimeChange: Infinity, // 优化性能
+    // requestRenderMode: true, // 优化性能
+    // maximumRenderTimeChange: Infinity, // 优化性能
+    contextOptions: {
+      requestWebgl1: true,  // 使用WebGL1.0的语法
+    },
   });
   viewer.scene.globe.depthTestAgainstTerrain = true; // 开启深度检测
 }
-function setView(x, y, z) {
-  if (x instanceof Array || y instanceof Array) {
-    // 如果x和y是数组，根据x和y计算出定位的矩形范围
-    viewer.camera.setView({
-      destination: Cesium.Rectangle.fromDegrees(...handleData(x, y)),
-      duration: 0,
-      complete: () => {},
-    });
-  } else {
-    viewer.camera.setView({
-      destination: Cesium.Cartesian3.fromDegrees(x, y, z),
-      duration: 0,
-      complete: () => {},
-    });
-  }
 
-  function handleData(x_arr, y_arr) {
-    var xmax = 0;
-    var xmin = 180;
-    var ymax = 0;
-    var ymin = 90;
-    x_arr.forEach((x) => {
-      xmax = Math.max(xmax, x);
-      xmin = Math.min(xmin, x);
-    });
-    y_arr.forEach((y) => {
-      ymax = Math.max(ymax, y);
-      ymin = Math.min(ymin, y);
-    });
-    var shift_x = (xmax - xmin) / 20;
-    var shift_y = (ymax - ymin) / 20;
-    return [xmin - shift_x, ymin - shift_y, xmax + shift_x, ymax + shift_y];
-  }
-}
-onMounted(() => {
-  initMap();
-  setView(114.12355031754687, 22.526787240228305, 10000);
-  add3DLine();
-});
-</script>
-
-```
-
-# 二、三维管线
-
-```javascript
 // 添加三维管线
-function add3DLine(withOutline) {
+function add3DLine(withOutline, withAnimation) {
   const volume = []; // 管线
   const volume_outline = []; // 管线轮廓
+  const volume_animation = []; // 流动箭头
 
   // 管线的横截面，radius半径，side_number几边形
   function computeCircle(radius, side_number) {
@@ -135,6 +82,19 @@ function add3DLine(withOutline) {
               new Cesium.Color(255 / 255, 255 / 255, 255 / 255, 1)
             ),
           },
+        })
+      );
+    }
+    // 流动箭头
+    if (withAnimation) {
+      volume_animation.push(
+        new Cesium.GeometryInstance({
+          geometry: new Cesium.PolylineGeometry({
+            positions: Cesium.Cartesian3.fromDegreesArrayHeights(
+              handleData(positions, 5.5)
+            ),
+            width: 10,
+          }),
         })
       );
     }
@@ -184,6 +144,50 @@ function add3DLine(withOutline) {
       })
     );
   }
+  // 流动箭头
+  if (withAnimation) {
+    viewer.scene.primitives.add(
+      new Cesium.Primitive({
+        asynchronous: false,
+        geometryInstances: volume_animation,
+        appearance: new Cesium.PolylineMaterialAppearance({
+          material: new Cesium.Material({
+            fabric: {
+              uniforms: {
+                image: arrow_img,
+                imageW: 20,
+                alpha: 1.0,
+              },
+              source: `
+                varying float v_polylineAngle;
+                uniform float alpha;
+
+                mat2 rotate(float rad) {
+                  float c = cos(rad);
+                  float s = sin(rad);
+                  return mat2(c, s, -s, c);
+                }
+                czm_material czm_getMaterial(czm_materialInput materialInput)
+                {
+                  czm_material material = czm_getDefaultMaterial(materialInput);
+                  vec2 st = materialInput.st;
+                  vec2 pos = rotate(v_polylineAngle) * gl_FragCoord.xy;
+                  float s = pos.x / (imageW * czm_pixelRatio);
+                  s = s - czm_frameNumber / 60.0;
+                  float t = st.t;
+                  vec4 colorImage = texture2D(image, vec2(fract(s), t));
+                  float a = colorImage.a;
+                  material.diffuse = colorImage.rgb;
+                  material.alpha = a * alpha;
+                  return material;
+                }
+				`,
+            },
+          }),
+        }),
+      })
+    );
+  }
 
   function handleData(data, height) {
     let arr = [];
@@ -195,10 +199,7 @@ function add3DLine(withOutline) {
   }
 }
 ```
-
-# 三、效果图
-![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/5-1.png)
-
 ---
+
 # 总结
-转换坐标系的tranformCoordinate方法，参考右文：[不同坐标系的经纬度转换](https://752841728.github.io/2023/08/24/%E4%B8%8D%E5%90%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%BB%8F%E7%BA%AC%E5%BA%A6%E8%BD%AC%E6%8D%A2/)
+暂时没有完美实现流动箭头的方案
