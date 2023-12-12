@@ -9,7 +9,7 @@
 <meta name="twitter:image" content="https://752841728.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://752841728.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
   translate: undefined,
   noticeOutdate: undefined,
   highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
@@ -53,7 +53,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-05-25 18:00:37'
+  postUpdate: '2023-12-12 02:07:32'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -157,21 +157,157 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/bg.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Funny Blog"><span class="site-name">Funny Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Funny Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/25/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Git常用命令">Git常用命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-05-25T03:11:14.000Z" title="发表于 2023-05-25 11:11:14">2023-05-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">前言假设：项目分支是dev、master项目地址是https://github.com/752841728/752841728.github.io.git
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-star"></i><span> 收藏</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/bg.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Funny Blog"><span class="site-name">Funny Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-star"></i><span> 收藏</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Funny Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/12/Cesium%E7%A2%B0%E6%92%9E%E6%A3%80%E6%B5%8B%E5%BC%B9%E7%AA%97/" title="Cesium碰撞检测弹窗">Cesium碰撞检测弹窗</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-12T10:19:17.000Z" title="发表于 2023-12-12 10:19:17">2023-12-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/GIS/">GIS</a></span></div><div class="content">前言弹窗在不互相遮挡的情况下，随着cesium相机高度升高而减少，随着cesium相机高度降低而增加
 
-一、克隆项目1.无本地仓库，有远程仓库1git clone https://github.com/752841728/752841728.github.io.git
-2.有本地仓库，有远程仓库12git remote rm origingit remote add origin https://github.com/752841728/752841728.github.io.git
-二、拉取提交1.拉取本地dev拉取远程dev：
-1git pull origin dev
-2.提交本地dev提交远程dev：
-123git add .git commit -m &quot;fix: 修复BUG&quot;git push origin dev
-3.关联分支本地dev关联远程dev：
-1git branch --set-upstream-to=origin/dev dev
-1git push -u origin dev // 通过提交本 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Funny Boy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/752841728/752841728.github.io"><i class="fab fa-github"></i><span>本站源码</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">风雪漫天，梅芳依旧；希望大家开心地度过每一天。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/25/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Git常用命令">Git常用命令</a><time datetime="2023-05-25T03:11:14.000Z" title="发表于 2023-05-25 11:11:14">2023-05-25</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+一、代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/05/TypeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="TypeScript学习笔记">TypeScript学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-05T11:15:26.000Z" title="发表于 2023-09-05 11:15:26">2023-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">前言近期在学习TypeScript，这里记录一下
+
+一、基础类型boolean、number、string、null、undefined比较简单，不再阐述
+array
+123let arr: number[] = [1, 2, 3];let arr: Array&lt;number&gt; = [1, 2, 3];let arr: [number, string] = [1, &#x27;2&#x27;]	// 元组tuple
+enum
+12345678910111213141516171819202122// 异构枚举，既包含数字又包含字符串enum Direction &#123;  NORTH = 0,  SOUTH = 1,  EAST = 2,  WEST = &#x27;A&#x27;,&#125;console.log(Direction.NORTH)    // 0console.log(Direction[0])   // NORTH// es5var Direction;(function (Direction) &#123;    Direction[Direct ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/29/Canvas%E6%95%99%E7%A8%8B/" title="Canvas教程">Canvas教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-29T10:19:17.000Z" title="发表于 2023-08-29 10:19:17">2023-08-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">前言发现一篇Canvas教程，写得实在是太好了，这里就直接转载了
+
+canvas详细入门教程（1W字 吐血分享）</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/28/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/" title="前端项目部署流程">前端项目部署流程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-28T17:35:26.000Z" title="发表于 2023-08-28 17:35:26">2023-08-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></span></div><div class="content">前言项目组没有运维，前端负责打包部署
+
+一、vue-cli打包优化1.productionSourceMap虽然减少包体积，但是无法定位出现问题的代码
+1productionSourceMap: false,
+2.gzip1npm install compression-webpack-plugin
+
+12345const CompressionWebpackPlugin = require(&quot;compression-webpack-plugin&quot;);plugins: [  new CompressionWebpackPlugin(),],
+
+3.去除console1npm install babel-plugin-transform-remove-console
+
+12345678910const proPlugins = [];// 判断环境if (process.env.NODE_ENV === &#x27;production&#x27;) &#123;  proPlugins.push(&#x27;transform-remove-console&#x27 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/28/Vue%E4%BD%BF%E7%94%A8%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/" title="Vue使用不支持的文件类型">Vue使用不支持的文件类型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-28T15:47:00.000Z" title="发表于 2023-08-28 15:47:00">2023-08-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">前言Vue使用不支持的文件类型时，报You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file.错误示例中使用的数据：Cesium_Air.gltf
+
+一、vue-clivue-cli4只支持node16版本，node16版本以上的版本需要修改package.json文件
+123&quot;scripts&quot;: &#123;  &quot;serve&quot;: &quot;set NODE_OPTIONS=--openssl-legacy-provider &amp;&amp; vue-cli-service serve&quot;,&#125;,
+
+1.安装依赖12npm install url-loadernpm install file-loader
+2.配置vue.config.js文件12345678910module: &#123;  rules: [    &#123;      tes ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/28/Cesium%E7%9B%B8%E6%9C%BA%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E9%A3%9E%E8%A1%8C/" title="Cesium相机根据路径飞行">Cesium相机根据路径飞行</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-28T15:21:02.000Z" title="发表于 2023-08-28 15:21:02">2023-08-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/GIS/">GIS</a></span></div><div class="content">前言Cesium相机根据路径飞行，参考官网例子：CZML Path
+
+一、路径path.json
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849[  &#123;    &quot;id&quot;: &quot;document&quot;,    &quot;name&quot;: &quot;CZML Path&quot;,    &quot;version&quot;: &quot;1.0&quot;,    &quot;clock&quot;: &#123;      &quot;interval&quot;: &quot;2012-08-04T10:00:00Z/2012-08-04T15:00:00Z&quot;,      &quot;currentTime&quot;: &quot;2012-08-04T10:00:00Z&quot;,      &quot;multiplier&quot;: 10    &#125;  &#125;,  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/28/Cesium%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0label%E5%92%8Cbillboard/" title="Cesium批量添加label和billboard">Cesium批量添加label和billboard</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-28T11:06:02.000Z" title="发表于 2023-08-28 11:06:02">2023-08-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/GIS/">GIS</a></span></div><div class="content">前言使用primitive批量添加label和billboard示例中使用的数据：pump.json、pump_icon.png
+
+一、配置12345678910111213141516171819202122232425262728293031323334353637383940&lt;template&gt;  &lt;div&gt;    &lt;div id=&quot;map&quot; style=&quot;width: 100vw; height: 100vh&quot;&gt;&lt;/div&gt;  &lt;/div&gt;&lt;/template&gt;&lt;script&gt;import * as Cesium from &quot;cesium&quot;;import &quot;cesium/Build/Cesium/Widgets/widgets.css&quot;;import pumpData from &quot;@/assets/pump.json&quot;;import pump_icon from &quot;@/assets/pu ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/24/Cesium%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE/" title="Cesium自定义底图">Cesium自定义底图</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-24T16:43:02.000Z" title="发表于 2023-08-24 16:43:02">2023-08-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/GIS/">GIS</a></span></div><div class="content">前言近期在做大屏的项目，需要蓝色系的地图，让我头疼了很久，这里提供一些方案
+
+一、配置12345678910111213141516171819202122// Cesium的tokenCesium.Ion.defaultAccessToken =  &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2ZTgxOGNhZC03NThmLTQ0NzMtOTNlYS1kNmM3YzlmZDU3NTMiLCJpZCI6MTI1NTY3LCJpYXQiOjE2NzY5MDI0MzJ9.ulIEz3NCh2cMEBiHrqIuv9I6icn5KTMMnBdy2wassoM&quot;;// SuperMap的tokenCesium.Credential.CREDENTIAL = new Cesium.Credential(  &quot;ILPgjURUGKYLUyyTvQpjzZKkmmJaH0P1YwvShK4xShMthIA3JbY68vvfyxqVitXLDV7l24XaWzG35SzVnCwNWg..&quot;);viewer ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/24/%E4%B8%8D%E5%90%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%BB%8F%E7%BA%AC%E5%BA%A6%E8%BD%AC%E6%8D%A2/" title="不同坐标系的经纬度转换">不同坐标系的经纬度转换</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-24T15:27:17.000Z" title="发表于 2023-08-24 15:27:17">2023-08-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/GIS/">GIS</a></span></div><div class="content">前言不同坐标系的经纬度转换示例中使用的网站：https://epsg.io/
+
+一、安装依赖1npm install proj4
+
+二、引入依赖1import &#123; default as proj4 &#125; from &quot;proj4&quot;;
+三、使用方法1.搜索坐标系
+2.复制对应代码“2326&#x3D;”不用复制
+3.经纬度转换1234567// EPSG:2326坐标转WGS 84坐标export function tranformCoordinate(x, y) &#123;	const fromProjection = `PROJCS[&quot;Hong Kong 1980 Grid System&quot;,GEOGCS[&quot;Hong Kong 1980&quot;,DATUM[&quot;Hong_Kong_1980&quot;,SPHEROID[&quot;International 1924&quot;,6378388,297],TOWGS84[-162.619,-276.959,-161.764,-0.067753,2.2436 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/24/Cesium%E6%B7%BB%E5%8A%A0%E4%B8%89%E7%BB%B4%E7%AE%A1%E7%BA%BF/" title="Cesium添加三维管线">Cesium添加三维管线</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-24T14:58:17.000Z" title="发表于 2023-08-24 14:58:17">2023-08-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/GIS/">GIS</a></span></div><div class="content">前言使用primitive添加三维管线，并自定义材质和颜色示例中使用的数据：map-3d.json、surface.jpg
+
+一、配置1234567891011121314151617181920212223242526272829303132333435363738&lt;template&gt;  &lt;div&gt;    &lt;div id=&quot;map&quot; style=&quot;width: 100vw; height: 100vh&quot;&gt;&lt;/div&gt;  &lt;/div&gt;&lt;/template&gt;&lt;script&gt;import * as Cesium from &quot;cesium&quot;;import &quot;cesium/Build/Cesium/Widgets/widgets.css&quot;;import mapData from &quot;@/assets/map-3d.json&quot;;import surface_img from &quot;@/assets/surfac ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/404.gif'" alt="avatar"/></div><div class="author-info__name">Funny Boy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/752841728/752841728.github.io"><i class="fab fa-github"></i><span>GitHub</span></a></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/12/Cesium%E7%A2%B0%E6%92%9E%E6%A3%80%E6%B5%8B%E5%BC%B9%E7%AA%97/" title="Cesium碰撞检测弹窗">Cesium碰撞检测弹窗</a><time datetime="2023-12-12T10:19:17.000Z" title="发表于 2023-12-12 10:19:17">2023-12-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/05/TypeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="TypeScript学习笔记">TypeScript学习笔记</a><time datetime="2023-09-05T11:15:26.000Z" title="发表于 2023-09-05 11:15:26">2023-09-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/29/Canvas%E6%95%99%E7%A8%8B/" title="Canvas教程">Canvas教程</a><time datetime="2023-08-29T10:19:17.000Z" title="发表于 2023-08-29 10:19:17">2023-08-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/28/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/" title="前端项目部署流程">前端项目部署流程</a><time datetime="2023-08-28T17:35:26.000Z" title="发表于 2023-08-28 17:35:26">2023-08-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/28/Vue%E4%BD%BF%E7%94%A8%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/" title="Vue使用不支持的文件类型">Vue使用不支持的文件类型</a><time datetime="2023-08-28T15:47:00.000Z" title="发表于 2023-08-28 15:47:00">2023-08-28</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/"><span class="card-category-list-name">前端</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-05-25T10:00:37.063Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/GIS/"><span class="card-category-list-name">GIS</span><span class="card-category-list-count">10</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/"><span class="card-category-list-name">前端</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"><span class="card-category-list-name">服务器</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/WebGL/" style="font-size: 1.1em; color: #999">WebGL</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/Nginx/" style="font-size: 1.3em; color: #99a1ac">Nginx</a> <a href="/tags/Cesium/" style="font-size: 1.5em; color: #99a9bf">Cesium</a> <a href="/tags/JavaScript/" style="font-size: 1.1em; color: #999">JavaScript</a> <a href="/tags/Vue/" style="font-size: 1.3em; color: #99a1ac">Vue</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-12-12T02:07:32.143Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = data.hitokoto
+      }
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><div class="aplayer no-destroy" data-id="728025655" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrctype="0"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
