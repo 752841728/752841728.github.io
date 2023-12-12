@@ -1,8 +1,10 @@
 title: Cesium碰撞检测弹窗
 author: Funny Boy
-date: 2023-08-29 10:19:17
+date: 2023-12-12 10:19:17
 tags: ["Cesium"]
 categories: ["GIS"]
+
+---
 
 # 前言
 弹窗在不互相遮挡的情况下，随着cesium相机高度升高而减少，随着cesium相机高度降低而增加
@@ -452,4 +454,4 @@ export default {
 ---
 
 # 效果图
-![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/10-1.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/752841728/hexo-picture/main/img/10-1.gif)
