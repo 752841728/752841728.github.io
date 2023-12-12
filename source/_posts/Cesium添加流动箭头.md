@@ -10,6 +10,7 @@ categories: ["GIS"]
 
 添加三维管线的方法和数据，参考右文：[Cesium添加三维管线](https://752841728.github.io/2023/08/24/Cesium%E6%B7%BB%E5%8A%A0%E4%B8%89%E7%BB%B4%E7%AE%A1%E7%BA%BF)
 本文是在add3DLine函数的基础上增加withAnimation传参实现添加流动箭头（使用WebGL1.0的语法）
+示例中使用的数据：[arrow.png](https://github.com/752841728/hexo-picture/blob/main/map/arrow.png)
 
 ---
 # 一、根据图片大小分配箭头数量
@@ -17,7 +18,7 @@ categories: ["GIS"]
 缺陷：通过计算线的角度解决图片破碎问题，导致部分情况箭头方向相反
 
 ```javascript
-import arrow_img from "@/assets/images/arrow.png";
+import arrow_img from "@/assets/arrow.png";
 
 function initMap() {
   Cesium.Ion.defaultAccessToken =
