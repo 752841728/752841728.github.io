@@ -1,4 +1,4 @@
-title: Vue自动压缩dist文件
+title: Vue 自动压缩 dist 文件
 author: Funny Boy
 date: 2023-12-15 17:35:26
 tags: ["Nginx"]
@@ -7,17 +7,20 @@ categories: ["服务器"]
 ---
 
 # 前言
-最近部署项目频繁，故想省去手动压缩dist文件的步骤
+
+最近部署项目频繁，故想省去手动压缩 dist 文件的步骤
 
 ---
+
 # 一、vue-cli4
+
 ## 1.安装插件
 
 ```powershell
 npm install filemanager-webpack-plugin -D
 ```
 
-## 2.配置vue.config.js
+## 2.配置 vue.config.js
 
 ```javascript
 const FileManagerPlugin = require("filemanager-webpack-plugin");
@@ -53,32 +56,30 @@ module.exports = defineConfig({
 ```
 
 # 二、vite
+
 ## 1.安装插件
 
 ```powershell
-npm install rollup-plugin-compression -D
+npm install vite-plugin-zip-pack -D
 ```
 
-## 2.配置vite.config.js
+## 2.配置 vite.config.js
 
 ```javascript
-import compresssionBuild from "rollup-plugin-compression";
-import type { ICompressionOptions } from "rollup-plugin-compression";
-const option: ICompressionOptions = {
-  sourceName: `dist`,
-  type: "zip",
-  targetName: `dist`,
-};
+import zipPack from "vite-plugin-zip-pack";
+
 export default defineConfig({
-  build: {
-    outDir: option.sourceName
-  },
-  ......
-  plugins: [vue(), compresssionBuild(option)]
+  plugins: [
+    zipPack({
+      inDir: "dist",
+      outFileName: "dist.zip",
+    }),
+  ],
 });
 ```
 
 ---
 
 # 总结
-最好使用Jenkins自动化部署
+
+最好使用 Jenkins 自动化部署
